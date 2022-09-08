@@ -1,0 +1,22 @@
+<div class="comments">
+    {{#each this}}
+    <section class="comment">
+        <div class="meta">
+            {{user.username}}
+        </div>
+        <div class="text">
+            {{body}}
+        </div>
+    </section>
+    {{/each}}
+</div>
+
+<form class="comment-form">
+  <div>
+    <textarea name="comment-body"></textarea>
+  </div>
+
+  <div>
+    <button type="submit">add comment</button>
+  </div>
+</form>
